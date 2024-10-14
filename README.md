@@ -21,14 +21,27 @@ The **Food Delivery Time Prediction** project uses a machine learning model to p
 - Provides delivery time range (e.g., 35-40 minutes) along with exact predictions
 - Utilizes traffic, weather, and other order-related data
 
+### Demo:
+You can also check out a live demo of this project hosted on **Streamlit** at the following link:
+[Live Demo on Streamlit]([https://share.streamlit.io/your-username/food-delivery-time-prediction/main.py](https://fooddeliverytime-marynyk.streamlit.app/))
+
+In this demo, you can input different parameters such as coordinates of restaurant and delivery location, vehicle condition, traffic, weather and others to see real-time predictions for food delivery times.
+
 ## Installation
 
 ### Prerequisites:
-- Python 3.7 or above
-- [XGBoost](https://xgboost.readthedocs.io/en/stable/) for machine learning
-- [Streamlit](https://streamlit.io/) for the web interface
-- [NumPy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/) for data handling
-- [Geopy](https://geopy.readthedocs.io/en/stable/) for distance calculation
+To run this project, you will need the following libraries and tools installed:
+
+- **Python 3.7** or above
+- **[geopy](https://geopy.readthedocs.io/en/stable/)** for distance calculation
+- **pickle** for saving and loading models (built into Python)
+- **[scikit-learn](https://scikit-learn.org/stable/)** for machine learning models
+- **[pandas](https://pandas.pydata.org/)** for data manipulation
+- **[NumPy](https://numpy.org/)** for numerical computations
+- **[Streamlit](https://streamlit.io/)** for the web interface
+- **[folium](https://python-visualization.github.io/folium/)** for interactive maps
+- **[streamlit-folium](https://github.com/randyzwitch/streamlit-folium)** for integrating folium maps into Streamlit
+
 
 ### Steps:
 1. Clone the repository:
@@ -52,16 +65,3 @@ The **Food Delivery Time Prediction** project uses a machine learning model to p
     ```bash
     streamlit run main.py
     ```
-
-## Project Structure
-
-```bash
-food-delivery-time-prediction/
-│
-├── data/                   # Folder for storing datasets
-├── models/                 # Folder for storing saved models
-├── prediction.py           # Contains prediction logic
-├── main.py                 # Streamlit app entry point
-├── requirements.txt        # List of project dependencies
-├── README.md               # Project documentation
-└── tests/                  # Folder for unit tests
