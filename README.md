@@ -6,6 +6,7 @@ This project is focused on predicting the delivery time of food orders using mac
 
 ## Table of Contents
 - [Overview](#overview)
+- [Demo](#demo)
 - [Installation](#installation)
 
 ## Overview
