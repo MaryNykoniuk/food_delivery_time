@@ -10,7 +10,7 @@ This project is focused on predicting the delivery time of food orders using mac
 - [Installation](#installation)
 
 ## Overview
-The **Food Delivery Time Prediction** project uses a machine learning model to predict the estimated delivery time for food orders. The model is trained on data that includes various features such as the condition of the delivery vehicle, traffic conditions, weather, and the type of order. The main goal of this project is to provide a range of estimated delivery times in an easy-to-understand format.
+The **Food Delivery Time Prediction** project uses a machine learning model to predict the estimated delivery time for food orders. The model is trained on data that includes various features such as the condition of the delivery vehicle, traffic conditions, weather, the type of order and others. The main goal of this project is to provide a range of estimated delivery times in an easy-to-understand format.
 
 ### Features:
 - Predicts delivery time in minutes
