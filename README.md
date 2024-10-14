@@ -18,7 +18,7 @@ The **Food Delivery Time Prediction** project uses a machine learning model to p
 
 ### Demo:
 You can also check out a live demo of this project hosted on **Streamlit** at the following link:
-[Live Demo on Streamlit]([https://share.streamlit.io/your-username/food-delivery-time-prediction/main.py](https://fooddeliverytime-marynyk.streamlit.app/))
+[Live Demo on Streamlit](https://fooddeliverytime-marynyk.streamlit.app/)
 
 In this demo, you can input different parameters such as coordinates of restaurant and delivery location, vehicle condition, traffic, weather and others to see real-time predictions for food delivery times.
 
