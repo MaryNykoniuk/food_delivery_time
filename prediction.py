@@ -61,11 +61,11 @@ def prediction(data):
     features = preprocessing(data)
     features = np.array(features).reshape(1,-1)
 
-    with open('scaler1.pkl', 'rb') as file:
+    with open('scaler_delivery.pkl', 'rb') as file:
         loaded_scaler = pickle.load(file)
 
     features_scaled = loaded_scaler.transform(features)
-    model = pickle.load(open("xgb_model1", "rb"))
+    model = pickle.load(open("xgb_model_delivery", "rb"))
     predictions = model.predict(features_scaled)
     return predictions
 
@@ -75,22 +75,4 @@ def format_delivery_time(predicted_time):
     lower_bound = 5 * np.floor(predicted_time / 5)
     upper_bound = 5 * np.ceil(predicted_time / 5)
 
-    # Повернення результату в форматі: 35-40 хв (передбачено 39.9)
     return f"{int(lower_bound)}-{int(upper_bound)} хв (model predicts {predicted_time:.1f} хв)"
-'''
-Delivery_person_Age      43862 non-null  float64
- 1   Delivery_person_Ratings  43862 non-null  float64
- 2   Weather_conditions       43862 non-null  int64  
- 3   Road_traffic_density     43862 non-null  int64  
- 4   Vehicle_condition        43862 non-null  int64  
- 5   Type_of_order            43862 non-null  int64  
- 6   Type_of_vehicle          43862 non-null  int64  
- 7   multiple_deliveries      43862 non-null  float64
- 8   Festival                 43862 non-null  int64  
- 9   City                     43862 non-null  int64  
- 10  Time_of_Day              43862 non-null  int64  
- 11  Order_day_of_week        43862 non-null  int64  
- 12  Order_is_weekend         43862 non-null  int64  
- 13  order_prepare_time       43862 non-null  float64
- 14  geodesic_distance_km
- '''
